@@ -26,6 +26,57 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
         camera.position.z = 200;
+
+        var light = new THREE.PointLight(0xffffff, 1, 1000);
+        light.position.set(50, 50, 50);
+        scene.add(light);
+
+        var light2 = new THREE.PointLight(0xb00505, 1, 1000);
+        light2.position.set(-50, -50, -50);
+        scene.add(light2);
+
+        var loader = new THREE.GLTFLoader();
+        loader.load('dog.glb', function (gltf) {
+            gltf.scene.position.x = -100;
+            gltf.scene.position.y = -40;
+            gltf.scene.rotation.y = 20;
+            gltf.scene.scale.x = .5;
+            gltf.scene.scale.y = .5;
+            gltf.scene.scale.z = .5;
+
+            scene.add(gltf.scene);
+        },
+        loader.load('cat.glb', function (gltf) {
+            gltf.scene.position.x = 50;
+            gltf.scene.rotation.y = 5;
+            gltf.scene.scale.x = 3;
+            gltf.scene.scale.y = 3;
+            gltf.scene.scale.z = 3;
+
+            scene.add(gltf.scene);
+        },
+        loader.load('rabbit.glb', function (gltf) {
+            gltf.scene.position.x = -100;
+            gltf.scene.position.z = -200;
+            gltf.scene.rotation.y = -12;
+            gltf.scene.scale.x = 6;
+            gltf.scene.scale.y = 6;
+            gltf.scene.scale.z = 6;
+
+            scene.add(gltf.scene);
+        }, function (xhr) {
+            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+        }, function (error) {
+            console.error(error);
+        })));
+
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+        animate();
+
+
     </script>
 </body>
 
