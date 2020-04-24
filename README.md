@@ -12,4 +12,10 @@ Lab3:
     For the first cube on the left, I use my own fragment shader without defining colors to get the rainbow color. 
     For the second cube on the left, I followed the tutorial to get the green specular highlight. 
     For the third cube from the left, I use the my own shader to interpolate between lavender and aquamarine. 
-    For the fourth cube from the left, I made its color yellow and its specularity red, but I also made it so shiny that you can't really see the red. 
+    For the fourth cube from the left, I made its color yellow and its specularity red, but I also made it so shiny that you can't really see the red.
+
+Lab4:
+    Questions:
+        a. u = x / width + 0.5 / width;
+        b. v = y / height + 0.5 / height;
+        c. White
