@@ -32,18 +32,13 @@
         // code for fragment shader
         uniform sampler2D texture1;
         varying vec2 vUv;
+        vec2 tempVec;
+        float tempFloat = 2.0;
         void main() {
-            gl_FragColor = texture2D(texture1, vUv);
+            tempVec = vec2((vUv.x * tempFloat) - floor(vUv.x * tempFloat), (vUv.y * tempFloat) - floor(vUv.y * tempFloat));
+            gl_FragColor = texture2D(texture1, tempVec);
         }
-        </script>
-
-    ...
-
-    material = new THREE.ShaderMaterial({
-    uniforms: uniforms,
-    vertexShader: document.getElementById('vertexShader').textContent,
-    fragmentShader: document.getElementById('fragmentShader').textContent
-    });
+    </script>
 
     <script>
         // setup the scene
@@ -66,7 +61,6 @@
                     }
                 };
 
-
                 geometry1 = new THREE.BoxGeometry(1, 1, 1);
                 material1 = new THREE.ShaderMaterial({
                     uniforms: uniforms,
@@ -81,6 +75,25 @@
             }
         }
 
+        function addTextureShaderCube2() {
+                    var uniforms = {
+                        texture1: { type: "t",
+                        value: THREE.ImageUtils.loadTexture("154.jpg")}
+                    };
+            
+                    geometry1 = new THREE.BoxGeometry(1, 1, 1);
+                    material1 = new THREE.ShaderMaterial({
+                        uniforms: uniforms,
+                        vertexShader: document.getElementById('vertexShader').textContent,
+                        fragmentShader: document.getElementById('fragmentShader').textContent
+                    });
+
+                    mesh1 = new THREE.Mesh(geometry1, material1);
+                    mesh1.position.x =-2;
+                    mesh1.position.y =+ 2;
+                    scene.add(mesh1);
+                }
+
         THREE.Cache.enabled = true;
         var count = 0;
         var loader = new THREE.FileLoader();
@@ -93,6 +106,7 @@
                 vshader = data;
                 count += 1;
                 addTextureShaderCube(); // we will write this method
+                addTextureShaderCube2();
             },
             // onProgress callback
             function (xhr) {
@@ -110,6 +124,7 @@
                 fshader = data;
                 count += 1;
                 addTextureShaderCube(); // we will write this method
+                addTextureShaderCube2();
             },
             // onProgress callback
             function (xhr) {

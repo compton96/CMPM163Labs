@@ -19,3 +19,11 @@ Lab4:
         a. u = x / width + 0.5 / width;
         b. v = y / height + 0.5 / height;
         c. White
+
+    Link:
+        https://drive.google.com/file/d/1FnyRm3RNrbjeQ4QgDNhu7lDILrNc0Wfc/view?usp=sharing
+
+    Cubes:
+        For the first 4 cubes, I followed the tutorial.
+        For the tiled cube, I made another add cube function. Then in the fragment shader I made checks
+        to see if the texture is going past 1, and if it is, subtracting the coords by 1 to get the right location to tile from.
