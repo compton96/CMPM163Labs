@@ -39,3 +39,8 @@ Lab 6:
     Direcional Light: Behaves like the sun. It affects all objects in the scene, lighting them based on the light's direction.
     Point Light: Behaves like a bare light bulb. It illuminates objects in the scene based on the light's position.
     Area Light: Only work when baking a light map. Shines in all directions to 1 side of the rectangular plane.
+
+    How I made the hard hat material: I made a new material and set the diffuse color to the bright yellow you always see. Then I made it somewhat metallic and smooth, giving it the same reflection look to it.
+
+    ![](images/hard-hat.jpg)
+    ![](images/myHardhat.jpg)
