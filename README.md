@@ -33,3 +33,9 @@ Lab 5:
 
     Description: I modified the particle system in my own way with the particles going up from the tires. I also tried to give the map a Vaporwave aesthetic by
                 changing the colors of most things in the scene as well as the sun's light color.
+
+Lab 6:
+    Spotlight: Behaves like a flashlight. It points in a direction based on it's rotation and position. It illuminates in a cone.
+    Direcional Light: Behaves like the sun. It affects all objects in the scene, lighting them based on the light's direction.
+    Point Light: Behaves like a bare light bulb. It illuminates objects in the scene based on the light's position.
+    Area Light: Only work when baking a light map. Shines in all directions to 1 side of the rectangular plane.
