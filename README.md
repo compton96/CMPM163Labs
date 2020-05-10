@@ -45,3 +45,10 @@ Lab 6:
 <img src="images/hard-hat.jpg" width="500" height="500">
 
 ![](images/myHardhat.jpg)
+
+    Description of 2 objects with textures:
+        I made the wall have a brick texture and I made a cursed bucket with human skin texture.
+
+    Description of skybox: I found someone's skybox textures they made for a space scene, so I imported the 6 images and loaded it up as the skybox.
+
+![](images/sceneScreenshot.jpg)
