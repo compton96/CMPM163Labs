@@ -42,5 +42,6 @@ Lab 6:
 
     How I made the hard hat material: I made a new material and set the diffuse color to the bright yellow you always see. Then I made it somewhat metallic and smooth, giving it the same reflection look to it.
 
-![](images/hard-hat.jpg)
+<img src="images/hard-hat.jpg" width="500" height="500">
+
 ![](images/myHardhat.jpg)
