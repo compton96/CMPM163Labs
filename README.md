@@ -52,3 +52,10 @@ Lab 6:
     Description of skybox: I found someone's skybox textures they made for a space scene, so I imported the 6 images and loaded it up as the skybox.
 
 ![](images/sceneScreenshot.jpg)
+
+Lab 7:
+    a. Chose to do Part 1
+    b. Link to Video: https://drive.google.com/file/d/12F49tDWY0gWFV8rrvKh_uuP7NNIeZZIr/view?usp=sharing
+       I made the scene using slightly different tutorials because the mountain one didnt look like mountains and the water one just had broken code. So the effects are slightly different.
+    d. I contacted my partner on discord, but they did not respond, so they were unreachable.
+    e. We didn't work on the lab together, I didn't head from them at all. 
