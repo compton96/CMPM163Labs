@@ -59,3 +59,13 @@ Lab 7:
        I made the scene using slightly different tutorials because the mountain one didnt look like mountains and the water one just had broken code. So the effects are slightly different.
     d. I contacted my partner on discord, but they did not respond, so they were unreachable.
     e. We didn't work on the lab together, I didn't head from them at all. 
+
+Lab 8:
+    Tutorial City:
+![](images/lab8.jpg)
+
+    Inspiration: Florida
+![](images/florida.jpg)
+    Attempt at Florida: The city seems to have a lot of high rises and grass/nature. So I tried to make my city have very few short building, more tall ones, and lots of grass. My tall buildings
+    were not really tall enough to get the full effect though.
+![](images/Lab8Florida.jpg)
