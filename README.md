@@ -69,3 +69,8 @@ Lab 8:
     Attempt at Florida: The city seems to have a lot of high rises and grass/nature. So I tried to make my city have very few short building, more tall ones, and lots of grass. My tall buildings
     were not really tall enough to get the full effect though.
 ![](images/Lab8Florida.jpg)
+
+    d. Partner Part:
+        My partner went for a Venice kinda vibe, where he added water and a sunset-like skybox to make it feel more like venice. He coded it so the tall buildings would be next to the water. I thought 
+        it was a pretty good idea to code the building size depeding on if there's water next to it.
+    e. And nope, we didn't work on it together, just talked at the end about our stuff.
